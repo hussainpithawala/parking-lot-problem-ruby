@@ -24,6 +24,9 @@ module Command
     private
 
     def park_vehicle_in_slot
+      if parking_lot.has_vehicle_with_reg_number(reg_number)
+        raise 'Sorry Vehicle is already parked in the parking lot'
+      end
       slot = parking_lot.get_vacant_slot
       unless slot.nil?
         slot.park!(Car.new(reg_number))

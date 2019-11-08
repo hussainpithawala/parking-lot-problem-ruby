@@ -21,11 +21,10 @@ class ParkingLot
   end
 
   def has_vehicle_with_reg_number(reg_number)
-    slots.any? { |slot| !slot.is_vacant? and slot.parked_vehicle.reg_number == reg_number }
+    slots.any? { |slot| !slot.is_vacant? and slot.parked_vehicle.reg_number.eql? reg_number }
   end
 
   def get_slot_of_parked_vehicle(reg_number)
-    slots.detect { |slot| !slot.is_vacant? and slot.parked_vehicle.reg_number == reg_number }
+    slots.detect { |slot| !slot.is_vacant? and slot.parked_vehicle.reg_number.eql? reg_number }
   end
-
 end

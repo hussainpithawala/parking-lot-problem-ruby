@@ -15,6 +15,7 @@ describe 'CommandProcessor' do
         ['leave MH12-LJ-9893 2', "Registration number MH12-LJ-9893 with Slot Number 1 is free with Charge 10"],
         ['leave MH12-LJ-9893 2', "Registration number MH12-LJ-9893 not found"],
         ['park MH12-LJ-9893', "Allocated slot number: 1"],
+        ['park MH12-LJ-9893', "Sorry Vehicle is already parked in the parking lot"],
         ['park MH12-LJ-9894', "Allocated slot number: 2"],
         ['park MH12-LJ-9895', "Allocated slot number: 3"],
         ['park MH12-LJ-9896', "Allocated slot number: 4"],
