@@ -5,9 +5,9 @@ module Command
     attr_reader :capacity, :msg
 
     def initialize(context)
-      if context.nil?
-        raise "Uninitialized context.. cannot proceed ahead"
-      end
+      super(context)
+
+      context_is_not_nil?
 
       if context.capacity < 1
         raise "capacity cannot be less than 1"

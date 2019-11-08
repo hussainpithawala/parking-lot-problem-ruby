@@ -18,6 +18,7 @@ describe 'Create Command' do
 
   context 'when context is prepared but capacity is negative' do
     it 'fails to create a command' do
+      @context = Context.new
       @context.capacity = 0
       expect { Command::Create.new(@context) }.to raise_error(RuntimeError, 'capacity cannot be less than 1')
     end
