@@ -35,10 +35,7 @@ module Command
 
     def valid_arguments?
       context_is_not_nil?
-
-      if context.parking_lot.nil?
-        raise "Parking lot cannot be nil"
-      end
+      parking_lot_is_not_nil?
     end
 
   end

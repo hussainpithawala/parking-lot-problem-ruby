@@ -12,6 +12,12 @@ module Command
       end
     end
 
+    def parking_lot_is_not_nil?
+      if context.parking_lot.nil?
+        raise "Parking lot cannot be nil"
+      end
+    end
+
     def execute
       raise NotImplementedError, "#{self.class} has not implemented method '#{__method__}'"
     end
