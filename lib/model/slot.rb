@@ -22,7 +22,7 @@ class Slot
     if is_vacant?
       false
     else
-      @parked_vehicle.reg_number eq reg_number
+      @parked_vehicle.reg_number <=> reg_number
     end
   end
 end
