@@ -52,24 +52,35 @@ command)
 First, install [Ruby](https://www.ruby-lang.org/en/documentation/installation/). Then run the following commands under the main dir.
 
 ```
-parking_lot_2.0.0 $ ruby -v # confirm Ruby present
-ruby 2.6.4p104 (2019-08-28 revision 67798) [x86_64-darwin18]
-parking_lot_2.0.0 $ gem install bundler # install bundler to manage dependencies
-Successfully installed bundler-2.0.2
-Parsing documentation for bundler-2.0.2
+parking-lot-problem $ ruby -v # confirm Ruby present
+ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin19]
+parking-lot-problem $ gem install bundler # install bundler to manage dependencies
+Fetching bundler-2.2.15.gem
+Successfully installed bundler-2.2.15
+Parsing documentation for bundler-2.2.15
+Installing ri documentation for bundler-2.2.15
 Done installing documentation for bundler after 2 seconds
 1 gem installed
-parking_lot_2.0.0 $ bundle install # install dependencies
-Using bundler 2.0.2
-Using coderay 1.1.2
-Using diff-lcs 1.3
-Using method_source 0.9.2
-Using pry 0.12.2
-Using rspec-support 3.7.1
-Using rspec-core 3.7.1
-Using rspec-expectations 3.7.0
-Using rspec-mocks 3.7.0
-Using rspec 3.7.0
+parking-lot-problem $ bundle install # install dependencies
+Using bundler 2.2.15
+Fetching rspec-support 3.7.1
+Fetching diff-lcs 1.3
+Fetching method_source 0.9.2
+Fetching coderay 1.1.2
+Installing method_source 0.9.2
+Installing rspec-support 3.7.1
+Installing diff-lcs 1.3
+Installing coderay 1.1.2
+Fetching rspec-core 3.7.1
+Fetching rspec-expectations 3.7.0
+Fetching rspec-mocks 3.7.0
+Fetching pry 0.12.2
+Installing rspec-mocks 3.7.0
+Installing rspec-expectations 3.7.0
+Installing rspec-core 3.7.1
+Installing pry 0.12.2
+Fetching rspec 3.7.0
+Installing rspec 3.7.0
 Bundle complete! 3 Gemfile dependencies, 10 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
 functional_spec $ 
@@ -89,8 +100,8 @@ Finished in 0.01671 seconds (files took 0.4255 seconds to load)
 ## How to run the application
 You can run the application using `bin/parking_lot` by doing
 ```
-parking_lot/functional_spec $ ./bin/parking_lot functional_spec/fixtures/file_input.txt
+parking-lot-problem $ ./bin/parking_lot fixtures/file_input.txt
 ```
 
 ## Author
-* Hussain Pithawala (hussainpithawala@gmail.com)
+* Hussain Pithawala (hussainpithawala@hotmail.com)
