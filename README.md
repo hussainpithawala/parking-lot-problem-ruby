@@ -104,4 +104,4 @@ parking-lot-problem $ ./bin/parking_lot fixtures/file_input.txt
 ```
 
 ## Author
-* Hussain Pithawala (hussainpithawala@hotmail.com)
+* Hussain Pithawala
